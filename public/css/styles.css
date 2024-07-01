@@ -9,50 +9,6 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #f3c623;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: all 0.3s;
-}
-
 /* Hero Section */
 .hero {
     display: flex;
@@ -81,52 +37,6 @@ nav {
     margin-bottom: 30px;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn-primary {
-    background-color: #00ff00; /* Primary button color */
-    color: #333;
-}
-
-.btn-primary:hover {
-    background-color: #fff;
-}
-
-.btn-secondary {
-    background-color: #fff;
-    color: #333;
-    border: 2px solid #00ff00;
-}
-
-.btn-secondary:hover {
-    background-color: #00ff00;
-    color: #fff;
-}
-
-.hero-brands {
-    margin-top: 20px;
-}
-
-.hero-brands span {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.hero-brands img {
-    margin-right: 10px;
-}
-
 .hero-image img {
     max-width: 100%;
     height: auto;
@@ -137,24 +47,34 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-description p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .nav-links {
+    .navbar-links {
         display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: 15px 0;
-    }
-
-    .burger {
-        display: block;
     }
 
     .hero {
@@ -169,8 +89,4 @@ footer {
     .hero-image {
         margin-top: 30px;
     }
-}
-
-.nav-active {
-    display: flex;
 }
