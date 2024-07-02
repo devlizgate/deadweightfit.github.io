@@ -4,24 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dead Weight Fitness</title>
+    <link rel="icon" type="image/x-icon" href="public/images/ico/favicon.ico">
     <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="icon" href="public/images/ico/favicon.ico" type="image/x-icon">
-    <script src="public/js/loadComponents.js" defer></script>
-    <script src="public/js/scripts.js" defer></script>
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 </head>
 <body>
-    <div include-html="components/header.html"></div>
-    <div id="main-content">
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Push <span class="highlight">yourself</span> harder to become better</h1>
+    <header>
+        <div class="top-bar">
+            <div class="top-links">
+                <a href="#">Create Account</a>
+                <a href="#">Login</a>
+            </div>
+            <div class="search-cart">
+                <input type="text" placeholder="Search Products">
+                <button>Go</button>
+                <img src="public/images/cart.png" alt="Cart">
+            </div>
+        </div>
+        <div class="logo-nav">
+            <img src="public/images/logo.png" alt="DWF" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="container">
+                <h1>Push yourself harder to become better</h1>
                 <p>Welcome to the place where health and fitness is a way of life! Improve your quality of life, get ready to change your life and step into the amazing world of fitness!</p>
+                <img src="public/images/hero.jpg" alt="Fitness Hero">
             </div>
-            <div class="hero-image">
-                <img src="public/images/hero-image.png" alt="Fitness Hero">
-            </div>
-        </section>
-    </div>
-    <div include-html="components/footer.html"></div>
+        </div>
+        <div class="main-content container">
+            <h2>Our Mission</h2>
+            <p>At Dead Weight Fitness, our mission is to provide the best fitness gear and tips to help you achieve your health goals. Whether you're just starting out or you're a seasoned athlete, we've got something for you.</p>
+            <h2>Shop Our Products</h2>
+            <p>Explore our wide range of fitness products, from weights and resistance bands to apparel and accessories.</p>
+            <h2>Join Our Community</h2>
+            <p>Connect with like-minded fitness enthusiasts, share your journey, and stay motivated with our supportive community.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="public/images/logo.png" alt="DWF" class="logo">
+            <p>Dead Weight Fitness - Your go-to platform for top-notch fitness gear and tips!</p>
+            <p>© 2024 Dead Weight Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="public/js/scripts.js"></script>
 </body>
 </html>

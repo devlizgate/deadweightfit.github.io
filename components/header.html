@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dead Weight Fitness - Home</title>
+    <title>Dead Weight Fitness</title>
     <link rel="icon" type="image/x-icon" href="public/images/ico/favicon.ico">
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/header.css">
 </head>
 <body>
-    <div class="header">
+    <header>
         <div class="top-bar">
-            <div class="left">
-                <a href="#" class="account-link">Create Account</a>
-                <a href="#" class="login-link">Login</a>
+            <div class="top-links">
+                <a href="#">Create Account</a>
+                <a href="#">Login</a>
             </div>
-            <div class="right">
-                <form class="search-form">
-                    <input type="text" placeholder="Search Products">
-                    <button type="submit">Go</button>
-                </form>
-                <a href="#" class="cart-link"><img src="public/images/icons/cart.gif" alt="Cart"></a>
+            <div class="search-cart">
+                <input type="text" placeholder="Search Products">
+                <button>Go</button>
+                <img src="public/images/cart.png" alt="Cart">
             </div>
         </div>
-        <div class="main-header">
-            <a href="index.html" class="logo">
-                <img src="public/images/logo.png" alt="DWF">
-            </a>
-            <nav class="navbar">
+        <div class="logo-nav">
+            <img src="public/images/logo.png" alt="DWF" class="logo">
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
+    <script src="public/js/scripts.js"></script>
 </body>
 </html>
