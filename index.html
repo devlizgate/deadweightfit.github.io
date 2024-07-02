@@ -4,43 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dead Weight Fitness - Home</title>
-    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="public/images/ico/favicon.ico">
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/footer.css">
     <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/navbar.css">
 </head>
 <body>
-    <header>
-        <img src="public/images/DWF.png" alt="Dead Weight Fitness Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="pages/shop.html">Shop</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search Products">
-            <button>Go</button>
-        </div>
-        <div>
-            <a href="#">Cart</a>
-            <a href="#">Create Account</a>
-            <a href="#">Login</a>
-        </div>
-    </header>
-    
+    <div include-html="components/header.html"></div>
     <div class="container">
         <section class="hero">
-            <h1>Push <span style="color: green;">yourself</span> harder to become better</h1>
+            <h1>Push <span class="highlight">yourself</span> harder to become better</h1>
             <p>Welcome to the place where health and fitness is a way of life! Improve your quality of life, get ready to change your life and step into the amazing world of fitness!</p>
             <img src="public/images/fitness-hero.jpg" alt="Fitness Hero">
         </section>
     </div>
-    
-    <footer>
-        <img src="public/images/DWF.png" alt="Dead Weight Fitness Logo">
-        <p>Dead Weight Fitness - Your go-to platform for top-notch fitness gear and tips!</p>
-        <p>© 2024 Dead Weight Fitness. All rights reserved.</p>
-    </footer>
+    <div include-html="components/footer.html"></div>
+
+    <script>
+        document.querySelectorAll('div[include-html]').forEach(function(el) {
+            let file = el.getAttribute('include-html');
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    el.innerHTML = data;
+                    el.removeAttribute('include-html');
+                });
+        });
+    </script>
 </body>
 </html>
