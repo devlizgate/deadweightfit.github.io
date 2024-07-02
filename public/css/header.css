@@ -1,61 +1,37 @@
+/* Header styles */
 header {
-    background: #ffffff;
-    color: #000000;
-    padding: 10px 20px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
 }
 
-header .logo {
-    height: 50px;
-    width: auto;
-}
-
-nav a {
-    color: #000000;
-    margin: 0 10px;
+.navbar a {
+    color: black;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px;
 }
 
-nav a:hover {
+.navbar a:hover {
     color: #32CD32;
 }
 
-.search-bar {
+.navbar .logo img {
+    width: 160px;
+    height: auto;
+}
+
+.navbar .menu {
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
 
-.search-bar input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.search-bar button {
-    padding: 5px 10px;
-    border: none;
-    background-color: #32CD32;
-    color: #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 5px;
-}
-
-.search-bar button:hover {
-    background-color: #005f00;
-}
-
-header .account-links a {
-    color: #000000;
-    margin-left: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header .account-links a:hover {
-    color: #32CD32;
+.navbar .menu a {
+    font-size: 1em;
 }
