@@ -1,24 +1,20 @@
-/* Footer Styles */
+/* Footer-specific Stylesheet */
+
 footer {
     background-color: #fff;
-    padding: 20px;
-    border-top: 1px solid #ddd;
     text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ccc;
 }
 
-footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer img {
+    height: 60px;
 }
 
-footer .footer-content img {
-    width: auto;
-    height: 20;
-    margin-bottom: 10px;
+footer p {
+    margin: 10px 0;
 }
 
-footer .footer-content p {
-    color: #000;
-    font-size: 14px;
+footer p a {
+    color: #39A459; /* Green from the logo */
 }
