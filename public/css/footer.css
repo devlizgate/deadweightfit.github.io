@@ -6,7 +6,7 @@ footer {
     border-top: 1px solid #ddd;
 }
 
-footer img {
+footer .footer-logo {
     height: 50px;
     width: auto;
 }
@@ -16,5 +16,5 @@ footer p {
 }
 
 footer p.highlight {
-    color: green;
+    color: #32CD32;
 }
