@@ -1,109 +1,41 @@
-/* Main Stylesheet */
-
-/* Reset some default browser styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, div, span {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
+/* styles.css */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #000;
-    line-height: 1.6;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
 }
 
-/* Link styles */
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-/* Container styles */
 .container {
     width: 80%;
-    margin: auto;
-    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header styles */
-header {
-    background-color: #fff;
-    border-bottom: 2px solid #ccc;
-    padding: 10px 0;
+h1, h2, h3, h4, h5, h6 {
+    color: black;
 }
 
-header img {
-    display: inline-block;
-    vertical-align: middle;
-    height: 80px;
-    width: 80px;
+a {
+    color: green;
+    text-decoration: none;
 }
 
-header nav {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #000;
-    font-weight: bold;
-}
-
-/* Highlighted link styles */
-.header-highlight {
-    color: #39A459; /* Green from the logo */
-}
-
-/* Search bar styles */
-.search-container {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
-}
-
-.search-container input[type="text"] {
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-}
-
-.search-container button {
-    padding: 5px 10px;
-    font-size: 16px;
-    background-color: #39A459; /* Green from the logo */
-    color: #fff;
-    border: none;
-}
-
-/* Hero section styles */
 .hero {
+    background-color: white;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #E3F2FD; /* Light blue */
+    padding: 50px 0;
 }
 
 .hero h1 {
-    color: #1E88E5; /* Blue */
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: black;
 }
 
 .hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: black;
 }
 
 .hero img {
@@ -111,27 +43,43 @@ header nav ul li a {
     height: auto;
 }
 
-/* Footer styles */
-footer {
-    background-color: #fff;
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product-item {
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #ccc;
 }
 
-footer img {
-    height: 60px;
+.product-item img {
+    max-width: 100%;
+    height: auto;
 }
 
-footer p {
+.product-item h3 {
     margin: 10px 0;
+    color: black;
 }
 
-footer p a {
-    color: #39A459; /* Green from the logo */
+.product-item p {
+    color: black;
 }
 
-/* Utility classes */
-.text-highlight {
-    color: #39A459; /* Green from the logo */
+.product-item button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: darkgreen;
 }

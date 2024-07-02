@@ -1,20 +1,16 @@
-/* Footer-specific Stylesheet */
-
+/* footer.css */
 footer {
-    background-color: #fff;
+    background-color: white;
     text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #ccc;
+    padding: 20px;
+    border-top: 2px solid #E0E0E0;
 }
 
 footer img {
-    height: 60px;
+    height: 40px;
 }
 
 footer p {
-    margin: 10px 0;
-}
-
-footer p a {
-    color: #39A459; /* Green from the logo */
+    color: black;
+    margin: 5px 0;
 }

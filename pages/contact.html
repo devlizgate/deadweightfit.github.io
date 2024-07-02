@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Dead Weight Fit</title>
-    <link rel="icon" type="image/x-icon" href="../public/images/ico/favicon.ico">
+    <title>Contact - Dead Weight Fitness</title>
     <link rel="stylesheet" href="../public/css/header.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="stylesheet" href="../public/css/styles.css">
-    <script src="../public/js/scripts.js" defer></script>
 </head>
 <body>
-    <div include-html="../components/header.html"></div>
-    <main>
-        <section class="contact">
-            <h1>Contact Us</h1>
-            <p>If you have any questions, comments, or would like to partner with us, please reach out. We'd love to hear from you!</p>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <div include-html="../components/footer.html"></div>
-    <script>
-        includeHTML();
-    </script>
+    <header>
+        <img src="../public/images/DWF.png" alt="Dead Weight Fitness Logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Products">
+            <button>Go</button>
+        </div>
+        <div>
+            <a href="#">Cart</a>
+            <a href="#">Create Account</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us at:</p>
+        <p>Email: support@deadweightfit.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Fitness Street, Fit City, USA</p>
+    </div>
+    
+    <footer>
+        <img src="../public/images/DWF.png" alt="Dead Weight Fitness Logo">
+        <p>Dead Weight Fitness - Your go-to platform for top-notch fitness gear and tips!</p>
+        <p>© 2024 Dead Weight Fitness. All rights reserved.</p>
+    </footer>
 </body>
 </html>
