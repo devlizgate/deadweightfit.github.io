@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
-    <title>Dead Weight Fitness</title>
+    <title>Dead Weight Fitness - Home</title>
+    <link rel="icon" type="image/x-icon" href="public/images/ico/favicon.ico">
+    <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="/index.html"><img src="../public/images/ico/favicon.ico" alt="Dead Weight Fitness Logo" class="logo"></a>
-            <div class="navbar-links">
-                <a href="/">Home</a>
-                <a href="/pages/shop.html">Shop</a>
-                <a href="/pages/about.html">About</a>
-                <a href="/pages/contact.html">Contact</a>
+    <div class="header">
+        <div class="top-bar">
+            <div class="left">
+                <a href="#" class="account-link">Create Account</a>
+                <a href="#" class="login-link">Login</a>
             </div>
-            <div class="navbar-icons">
-                <input type="text" placeholder="Search...">
-                <button>Search</button>
-                <a href="#"><img src="../public/images/icons/cart.png" alt="Cart"></a>
-                <a href="#"><img src="../public/images/icons/user.png" alt="User"></a>
+            <div class="right">
+                <form class="search-form">
+                    <input type="text" placeholder="Search Products">
+                    <button type="submit">Go</button>
+                </form>
+                <a href="#" class="cart-link"><img src="public/images/cart-icon.png" alt="Cart"></a>
             </div>
-        </nav>
-    </header>
+        </div>
+        <div class="main-header">
+            <a href="index.html" class="logo">
+                <img src="public/images/logo.png" alt="DWF">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>
