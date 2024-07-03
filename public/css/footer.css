@@ -15,8 +15,8 @@ footer .footer-content {
 }
 
 footer .footer-content img {
-    width: 160px;
-    height: auto;
+    width: auto;
+    height: 50px;
 }
 
 footer p {
