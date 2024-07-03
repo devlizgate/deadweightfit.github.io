@@ -37,7 +37,7 @@ main {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #ff5733;
+    background: #00FF00; /* Update this with the actual green color code from your logo */
     color: white;
     text-decoration: none;
     border-radius: 5px;
