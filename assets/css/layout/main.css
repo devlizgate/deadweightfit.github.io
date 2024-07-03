@@ -1,0 +1,110 @@
+/* Main layout styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background: url('assets/images/banner/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.feature {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.testimonials {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.blog {
+    margin: 40px 0;
+}
+
+.blog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    background: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.blog-post h3 {
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    margin-bottom: 10px;
+}
+
+.blog-post a {
+    color: #ff5733;
+    text-decoration: none;
+    font-weight: bold;
+}
